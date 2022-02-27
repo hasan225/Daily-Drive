@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Touch Slider</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+   <div class="menu">
+        <i class="fas fa-times"></i>
+       <ul class="menu-items">
+           <li><a href="">Home</a></li>
+           <li><a href="">Services</a></li>
+           <li><a href="">Blog</a></li>
+           <li><a href="">About</a></li>
+           <li><a href="">Contact</a></li>
+          
+       </ul>
+   </div>
+   <div class="notification">
+        <i class="fas fa-undo"></i>
+        <h5>Notifications</h5>
+        <div class="notis">
+            <div class="single-notis">
+                <img src="img/1.jpg" alt="">
+                <p><strong>Mike Joss</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae.</p>
+            </div>
+            <div class="single-notis">
+                <img src="img/2.jpg" alt="">
+                <p><strong>Jenifer Moe</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae.</p>
+            </div>
+            <div class="single-notis">
+                <img src="img/3.jpg" alt="">
+                <p><strong>Alexa Flori</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae.</p>
+            </div>
+            <div class="single-notis">
+                <img src="img/4.jpg" alt="">
+                <p><strong>Jhon Doe</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae.</p>
+            </div>
+            <div class="single-notis">
+                <img src="img/5.jpg" alt="">
+                <p><strong>Kings Slay</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae.</p>
+            </div>
+            <div class="single-notis">
+                <img src="img/6.jpg" alt="">
+                <p><strong>Janie Wanda</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, repudiandae.</p>
+            </div>
+        </div>
+        
+   </div>
+    <div class="container">
+        <div class="header">
+            <span class="menuBar"><i class="fas fa-bars"></i></span>
+            <div class="AppDiscrip">Daily DRive</div>
+            <span class="bellIcon"><i class="fas fa-bell"></i></span>    
+        </div>
+         
+        <div class="contentBox">
+            <h1 class="heading">NEWS FEED</h1>
+            <p class="content">Croissant halvah chocolate cake croissant macaroon bonbon macaroon candy. Marzipan chocolate cake apple pie marshmallow
+            macaroon bonbon liquorice shortbread</p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/pexels-asad-photo-maldives-457881.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/pexels-chait-goli-2666598.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/pexels-mali-maeder-142497.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/pexels-pixabay-262978.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/pexels-spencer-davis-4388158.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/pexels-stein-egil-liland-3408744.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <footer class="footerMenu">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-search"></i>
+            <i class="far fa-user"></i>
+            <i class="fas fa-undo"></i>
+        </footer>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/eaf06ee921.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: '2',
+            spaceBetween: 80,
+            centeredSlides:true,
+            grabCursor:true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+           
+        });
+    </script>
+</body>
+</html>

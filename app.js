@@ -7,20 +7,20 @@ const notificationUndo =document.querySelector('.fa-undo');
 
 
 MenuBar.addEventListener('click',()=>{
-    menu.style.transform='translateX(0%)';
+    menu.style.transform='translateY(0%)';
     menu.style.transition='.4s'
 })
 MenuCancel.addEventListener('click',()=>{
-    menu.style.transform='translateX(-100%)';
+    menu.style.transform='translateY(-100%)';
     menu.style.transition='.4s';
 })
 
 bellIcon.addEventListener('click',()=>{
-    notification.style.transform='translateX(0%)';
+    notification.style.transform='translateY(0%)';
     notification.style.transition='.4s'
 })
 notificationUndo.addEventListener('click',()=>{
-    notification.style.transform='translateX(-100%)';
+    notification.style.transform='translateY(-100%)';
     notification.style.transition='.4s';
 })
 

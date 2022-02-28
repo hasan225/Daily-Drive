@@ -12,7 +12,7 @@ body {
         position: relative;
 }
 .container{
-    width: 350px;
+    max-width: 350px;
     height: 100vh;
     background-color: #0089d2;
     margin:0 auto;
@@ -28,6 +28,8 @@ body {
     background: #003b5a;
     box-shadow: 0px 0px 6px 5px rgb(0 0 0 / 10%);
     color: #37fff6;
+    z-index: 5;
+    position: relative;
 }
 
 span.menuBar {
@@ -70,7 +72,7 @@ footer.footerMenu {
     background: #003b5a;
     box-shadow: 0px 0px 6px 5px rgb(0 0 0 / 10%);
     color: #37fff6;
-
+    z-index: 5;
 }
 .mySwiper {
     height: 350px;
@@ -99,38 +101,39 @@ footer.footerMenu {
 .menu, .notification {
     position: absolute;
     background: black;
-    width: 100%;
+    width: 350px;
     height: 100vh;
     z-index: 2;
-    top: 0;
+    top: 53px;
     left: 0;
     overflow: hidden;
     color: white;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
 }
 ul.menu-items {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: self-start;
-    justify-content: space-evenly;
     padding: 0 40px;
+    padding: 0 30px;
 }
 
 ul.menu-items li a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     color: white;
 }
 
 ul.menu-items li {
     list-style: none;
+    margin: 47px 0;
 }
 .menu i, .notification i {
     position: absolute;
     top: 40px;
     right: 50px;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .notification h5 {
@@ -142,30 +145,35 @@ ul.menu-items li {
     padding: 20px;
 }
 .single-notis img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 13px;
 }
 .single-notis {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
 }
 
 .single-notis p {
     color: gainsboro;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .single-notis p strong {
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
 }
 .notification i {
     font-size: 20px;
     top: 23px;
     right: 35px;
+}
+span.bellIcon i:hover, span.menuBar i:hover {
+    font-size: 20px;
+    transition: .4s;
+    color: antiquewhite;
 }
